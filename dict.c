@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void woerter_einlesen(FILE *infile, char *woerter[], int MAXWORT, int *numworte, int MIN){
+void woerter_einlesen(FILE *infile, char *woerter[], int MAXWORT, int *numworte, int MIN){ //Ausgelagerte Funktion
   	char puffer[MAXWORT];
 	int nw=0;
  	while(fgets(puffer,MAXWORT,infile)){
